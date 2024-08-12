@@ -1,16 +1,22 @@
-main{
+body{
     width: 100vw;
-    height: 100vh;
+    height: 100vh; 
     margin: 0px;
     padding: 0px;
     overflow: hidden;
 }
 
+main{
+  height:100% ;
+  background-color: green;
+}
+
+
 .upper-container{
-    width: 100%;
+    /* width: 100%; */
     height: 90%;
     background-color:rgb(254, 229, 193);
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,16 +24,19 @@ main{
 
 .b-ground{
   width: 60%;
-  border-top-right-radius: 25%;
-  border-bottom-right-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius:2%;
 }
 
 .name{
-    top: 89px;
+    top: 70px;
     left: 180px;
     position: absolute;
-   
+   font-size: 20px;
 }
+
 .bg-image{
     position: relative;
     z-index: 1;
@@ -37,25 +46,39 @@ main{
 .bg-small{
     flex: 1;
     position: relative;
+    gap: 10px;
+    border: 1px solid red;
 }
 
 .small-img{
-    width: 200px;
-    height: 210px;
+    width: 190px;
+    height: 190px;
     z-index: 2;
     margin-top: -100px;
-    margin-left: 120px;
-    /* border-radius: 40%; */
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+    margin-left: 140px;
+    border-radius: 40%; 
+}
+
+h1{
+    font-weight: normal;
+}
+
+.personal-infor{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact{
+    /* border: 2px solid green;  */
+    padding: 2px;
+    
 }
 
 button{
     position: absolute;
-    bottom: 5px;
-    width: 200px;
+    bottom: 10px;
+    width: 350px;
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -63,11 +86,15 @@ button{
     color: white;
     font-weight: bold;
     font-size: large;
+    font-family: serif;
+    margin: auto;
 }
 
 h1{
-    border: 2px solid red;
-    text-align: center;
+    border: 2px solid red; 
+    /* text-align: center; */
+    margin-left: 70px;
+    
 }
 
 .contact{
@@ -79,5 +106,17 @@ h1{
 .contact-img{
     width: 20px;
     height: 20px;
+    padding: 10px;
+    border: 1px green;
+    margin-left: 5px;
 }
 
+.lower-container{
+    height: 20%;
+    text-align: center;
+    padding: 4px;
+    background-color:white;
+    font-size: 15px;
+    
+
+}
