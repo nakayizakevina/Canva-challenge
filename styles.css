@@ -8,16 +8,14 @@ body{
 
 main{
   height:100% ;
-  background-color: green;
+  overflow-y: scroll;
+  
 }
 
 
 .upper-container{
-    /* width: 100%; */
     height: 90%;
     background-color:rgb(254, 229, 193);
-    /* opacity: 50%; */
-    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,11 +76,7 @@ h1{
     gap: 15px;
 }
 
-.contact{
-    /* border: 2px solid green;  */
-    padding: 2px;
-    
-}
+
 
 button{
     position: absolute;
@@ -105,6 +99,7 @@ button{
     display: flex;
     flex-direction: row;
     gap:10px;
+    padding: 2px;
 }
 
 .contact-img{
@@ -116,10 +111,11 @@ button{
 }
 
 .lower-container{
-    height: 20%;
+    height: 8%;
     text-align: center;
     padding: 4px;
-    background-color:white;
+    /* background-color:white; */
+    background-color: aqua;
     font-size: 15px;
     
 
@@ -135,10 +131,13 @@ button{
     main{
         height:100% ;
        width: 30%;
+       overflow-y: hidden;
       }
       
    button{
-    width: 460px;
+    width: 440px;
+    padding: 15px;
+    font-size: 20px;
    }
     
    .name{
@@ -149,5 +148,19 @@ button{
     letter-spacing: 3px;
 }
 
+.contact{
+    gap:10px;
+    padding: 2px;
+}
 
+.contact-img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-left: 5px;
+}
+ 
+.contact-text{
+    font-size: 14px;
+}
 }
